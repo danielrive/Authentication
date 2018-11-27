@@ -1,0 +1,208 @@
+<style>
+.ribbon {
+   position: relative;
+   top: -16px;
+   right: -706px;
+}
+#content {
+    position: relative;
+}
+#content img {
+    position: absolute;
+    top: -100px;
+    right: 45px;
+}
+
+body, html {
+  min-height:5
+0%;
+  height:100%; /* if not working try vh instead of % */
+
+}
+
+body  {
+    
+    margin: -26px; /* Background Image Margin will be 0 */
+    background-repeat: no-repeat;  /* Background Image Will not repeat */
+    background-attachment: fixed;  /* Background Image will stay fixed */
+    background-size: cover; /* This will make background image width 100% and height 100% */
+    background: rgba(224,224,224,1);
+	
+}
+
+#Header
+{
+    width: 960px;
+    height: 950px;
+}
+#Content
+{
+    height: 100%;
+    width: 960px;
+}
+
+
+form {border: 3px solid #f1f1f1;}
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 30px;
+    margin: 22px;
+    border: none;
+    cursor: pointer;
+    width: 18%;
+    border: 1px solid rgba(0,0,0,0.9);
+    font: normal normal bold 18px/normal "Lucida Console", Monaco, monospace;
+    border-radius: 5px;
+}
+
+
+button:hover {
+    opacity: 0.6;
+	
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+img.avatar {
+    width: 10%;
+    border-radius: 20%;
+}
+.container {
+
+    padding: 5px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;2}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+.Font{
+font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size:20px;
+letter-spacing: 1.6px;
+word-spacing: -1.6px;
+color: #FFFFFF;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+.FontTable {
+font-family: "Times New Roman", Times, serif;
+font-size: 19px;
+letter-spacing: 0.8px;
+word-spacing: 1.8px;
+color: #FFFFFF;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+}
+
+.FontTableR {
+font-family: "Times New Roman", Times, serif;
+font-size: 17px;
+letter-spacing: 2px;
+word-spacing: 1.8px;
+color: #191919;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+}
+
+.FontTittles {
+font-family: "Times New Roman", Times, serif;
+font-size: 40px;
+letter-spacing: 2px;
+word-spacing: 1.8px;
+color: #191919;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+}
+
+
+#field_instance_id {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+
+table {
+        border: 1px solid black;
+	width: 58%
+	
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid black;
+}
+
+
+tr:hover {background-color: #ffe0cc;}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #ff751a;
+  width: 15px;
+  height: 15px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+</style>
+
