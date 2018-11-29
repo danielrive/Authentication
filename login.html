@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,user-scalable=no">
+		<meta name="HandheldFriendly" content="true">
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+		<!-- Cognito library file -->
+		<script src="https://sdk.amazonaws.com/js/aws-sdk-2.41.0.min.js"></script>
+        <script src="js/amazon-cognito-identity.min.js"></script>
+        <script src="js/identityConstants.js"></script>
+        
+		
+		<script src="js/login.js"></script>	
+		<title>Login-Avanxo Management EC2</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+	<body>
+		<div style="background-color:#ff5500;height:150px; width:1390px;">
+			<div class="Font" >
+			<br>
+			<h1 align="center"> Avanxo Management EC2</h1>
+			</div>
+			<div style="position: absolute; left: 10px; top: 20px; height: 10px; width: 80px; padding: 1em;">
+				<a href="http://www.avanxo.com/" target="_blank"> <img src="images/avanxo-logo-white.png" alt="logo" />  </a>
+			</div>
+			<div id="content">
+				<img src="images/awsLogo.png" class="ribbon"/>
+			</div>
+		</div>
+		<h1 align="center" class="FontTittles">  Login </h1>
+		<div class="container" align="center" id="InputIp">
+			<p> Ingrese las credenciales</p>
+			<input id="username" type="text" placeholder="Ingrese Username" required>
+			<br>
+			<input id="pass" type="password" placeholder="Ingrese Contraseña" required>
+			<br>
+			<button type="button" onclick="validate_credentials()"> login</button>
+</div>
+
+	</body>
+
+
+</html>
+
+
+
+

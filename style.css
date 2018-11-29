@@ -204,5 +204,72 @@ tr:hover {background-color: #ffe0cc;}
   100% { transform: rotate(360deg); }
 }
 
+
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn2 {
+        width: 100%;
+    }
+}
+
+.form__element {
+    margin: 0 0 1em 0;
+}
+
+.form__label {
+    font-size: 1.2em;
+    display: block;
+    margin: 0 0 0.4em 0;
+}
+
+.form__input {
+    width: 100%;
+    padding: 0.6em;
+    font-size: 1.3em;
+}
+
+.form__required {
+    float: right;
+    font-size: 0.8em;
+    background: #ddd;
+    padding: 0.3em;
+}
+
+.form__hint {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.form__hint:before {
+    content: "\1F6C8";
+    font-size: 1.2em;
+    margin: 0 0.2em 0 0;
+}
+
+.form__submit {
+    background: #326f10;
+    color: #fff;
+    border: none;
+    padding: 0.6em;
+    font-size: 1.4em;
+    float: right;
+}
+
+
 </style>
 
