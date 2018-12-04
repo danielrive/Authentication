@@ -1,5 +1,5 @@
 //global variables 
-var url_api = "https://en5ivdozsj.execute-api.us-east-1.amazonaws.com/test2/login";
+var url_api = "https://q19as99vr7.execute-api.us-east-1.amazonaws.com/test/login";
 
 function validate_credentials()
 {   
@@ -13,12 +13,12 @@ function validate_credentials()
 
     var authenticationDetails = new AmazonCognitoIdentity.AuthenticationDetails(authenticationData);
     var poolData = {
-        UserPoolId : 'us-east-1_BZ3m73NOR', // Your user pool id here
-        ClientId : '47k578kd4rk80o8esfj0dtelp8' // Your client id here
+        UserPoolId : userPoolId, // Your user pool id here
+        ClientId : clientId // Your client id here
     };
     var userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
     var userData = {
-        Username : 'admin',
+        Username : username_dom,
         Pool : userPool
     };
     
@@ -32,14 +32,13 @@ function validate_credentials()
     var cognitoUser = new AmazonCognitoIdentity.CognitoUser(userData);
     cognitoUser.authenticateUser(authenticationDetails, {
         onSuccess: function (result) {
-            var accessToken = result.getAccessToken().getJwtToken();
-			var idToken = result.idToken.jwtToken;
-			xhttp.open("POST", url_api, true);
-			xhttp.setRequestHeader("Authorization",idToken);
-			xhttp.send();
+        alert("inicio de sesion exitosa");
+	    location.href= "./index.html";
+
         },
  
         onFailure: function(err) {
+			alert("Login Fail");
 			alert(err);
 			return false;
         },
